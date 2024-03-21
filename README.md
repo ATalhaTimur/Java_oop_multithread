@@ -1,4 +1,4 @@
-# Java_oop_multithread
+# EcoSim "Java_oop_multithread"
 
 ### Preface
 In this project, the power of object-oriented programming principles has been fully utilized. Fundamental concepts such as abstract classes, enum structures, and inheritance form the foundation of the project. Thanks to these structures, the reusability, readability, and maintainability of the code have been significantly enhanced. The project also places great emphasis on performance optimization, applying multiprocess techniques in functions that require intensive computation. As a result, the speed and efficiency of the simulation have been substantially improved. For more details and technical information, please refer to the relevant sections of the document.
