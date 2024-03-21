@@ -36,3 +36,31 @@ The movement mechanisms of the animals have been enhanced as well. The `move` me
 Assigning a unique ID to each animal also facilitates management. This makes it much easier to track the movements, interactions, and changes of animals within the simulation, especially for newborn animals and during hunting events.
 
 These improvements ensure that the simulation operates smoothly, even in large-scale scenarios. As the number of animals increases and interactions intensify, the effects of these enhancements become even more pronounced, making the simulation both faster and more efficient.
+
+### UML class diagram
+
+![proje2](https://github.com/ATalhaTimur/Java_oop_multithread/assets/93510585/f83ab1ec-031a-4950-afb8-c9af5c95228b)
+
+![ProjectUml](https://github.com/ATalhaTimur/Java_oop_multithread/assets/93510585/085ef005-1309-40d2-b0a1-ad079c4bb2fb)
+
+Project Screenshots
+The project's runtime decreases significantly with JVM optimization.
+
+![Ekran görüntüsü 2024-03-14 041216](https://github.com/ATalhaTimur/Java_oop_multithread/assets/93510585/d6ac44f4-d0f2-42f2-83c3-e9f747df02e9)
+
+![Ekran görüntüsü 2024-03-14 040927](https://github.com/ATalhaTimur/Java_oop_multithread/assets/93510585/a5560f6b-5361-4283-a1a6-e15330ec4ae1)
+
+![Ekran görüntüsü 2024-03-14 043413](https://github.com/ATalhaTimur/Java_oop_multithread/assets/93510585/717e0af7-f890-4f6f-929d-76a42b1cd721)
+
+###Situations Where the Project Does Not Work (if the project does not stop when executed)
+
+**Solution:** 
+Restart the project until results are produced; once results are obtained for the first time, subsequent requests come directly as the JVM compiler becomes quicker to prepare.
+**Reason for this issue (based on my research):**
+
+The Java Virtual Machine (JVM) and its "Just-In-Time" (JIT) compiler.
+The JVM performs a series of optimizations during the execution of Java code. On the first run, the code is considered "cold"; meaning, the JIT compiler has not yet optimized the code.
+This can cause the code to run slower. As the program runs and certain pieces of code are used repeatedly, the JIT compiler identifies these codes as "hot" and compiles or optimizes them to improve runtime performance.
+The long duration you observed in your first run could be related to the JVM interpreting the code and the JIT compiler beginning to optimize. When you stop and restart the program, the JVM might have already made some optimizations and can execute especially frequently run portions of the code more quickly. This results in a significant performance increase on the second and subsequent runs. Additionally, there are startup costs during the initial loading of Java applications, such as class loaders loading classes, initialization of static blocks, and allocation of necessary resources.
+When the program is run again, the JVM and operating system might have cached some resources and data, making subsequent runs faster.
+
