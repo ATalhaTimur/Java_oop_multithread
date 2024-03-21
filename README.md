@@ -52,7 +52,7 @@ The project's runtime decreases significantly with JVM optimization.
 
 ![Ekran görüntüsü 2024-03-14 043413](https://github.com/ATalhaTimur/Java_oop_multithread/assets/93510585/717e0af7-f890-4f6f-929d-76a42b1cd721)
 
-###Situations Where the Project Does Not Work (if the project does not stop when executed)
+### Situations Where the Project Does Not Work (if the project does not stop when executed)
 
 **Solution:** 
 Restart the project until results are produced; once results are obtained for the first time, subsequent requests come directly as the JVM compiler becomes quicker to prepare.
